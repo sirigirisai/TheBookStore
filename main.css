@@ -54,7 +54,7 @@
     box-shadow: 0 5px 10px;
 }
 .bg-image-news {
-    background-image: url(img/books/bg/book_banner_cover_blue.jpg);
+    background-image: url("img/books/bg/book_banner_cover_blue.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
