@@ -424,9 +424,10 @@
 <!--Java Script Section-->
 <script src="js/fontawesome-all.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/mdb.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="@(Url.Content("js/popper.min.js"))" type="text/javascript"></script>
+<script src="@(Url.Content("js/mdb.min.js"))" type="text/javascript"></script>
+<script src="@(Url.Content("js/bootstrap.min.js"))" type="text/javascript"></script>
+
 
 <script>
   $('.carousel').carousel({
