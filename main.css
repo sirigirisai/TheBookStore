@@ -53,3 +53,45 @@
 .card-img{
     box-shadow: 0 5px 10px;
 }
+.bg-image-news {
+    background-image: url(img/books/bg/book_banner_cover_blue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+section{
+    display:block;
+}
+
+input[type=email]{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+}
+input[type=email]:focus{
+    background: transparent;
+    outline: none;
+    border-bottom: 3px solid black;
+}
+input[type=email]:active{
+    background: transparent;
+    outline: none;
+    border-bottom: 3px solid black;
+}
+.sub{
+    outline: none;
+    border:none;
+    border-bottom: 3px solid black;
+    padding: 0;
+}
+.sub:hover{
+    border: none;
+    border-bottom: 3px solid black;
+    background-color: transparent;
+    padding: 0;
+    color: black;
+}
+
+
+    
