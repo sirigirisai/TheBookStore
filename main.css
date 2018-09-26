@@ -54,7 +54,7 @@
     box-shadow: 0 5px 10px;
 }
 .bg-image-news {
-    background-image: url("img/books/bg/book_banner_cover_blue.jpg");
+    background-image: url(img/books/bg/book_banner_cover_blue.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -83,14 +83,16 @@ input[type=email]:active{
     outline: none;
     border:none;
     border-bottom: 3px solid black;
-    padding: 0;
+    padding: 0 25px;
+    box-shadow: none;
 }
 .sub:hover{
     border: none;
     border-bottom: 3px solid black;
     background-color: transparent;
-    padding: 0;
+    padding: 0 25px;
     color: black;
+    box-shadow: none;
 }
 
 
