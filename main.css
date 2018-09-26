@@ -2,15 +2,38 @@
     .tabs-col {
       columns:2;
     }
+    .carousel-caption{ 
+        top:20%;
+        bottom:5%;
+        padding: 10px;
+        width: 60%;
+        left:3%;
+
+    }
+    .carousel-caption h1{
+        font-size: 30px;
+    }
+    .carousel-caption h4{
+        font-size:15px;
+    }
+    .carousel-caption a{
+        display: none;
+    }
+    .nav-tabs .nav-item{
+        padding:5px;
+        margin: 0;
+    }
+
   }
+
 @media (min-width: 576px) { 
     .carousel-caption{
           
         top:20%;
         bottom:30%;
         padding: 10px;
-        border-radius: 10px;
         width: 60%;
+        left:5%;
 
     }
     .carousel-caption p{
@@ -22,8 +45,8 @@
         top:30%;
         bottom:50%;
         padding: 10px;
-        border-radius: 10px;
         width: 60%;
+        left: 10%;
 
     }
     .carousel-caption p{
@@ -35,8 +58,8 @@
         top:30%;
         bottom:30%;
         padding: 10px;
-        border-radius: 10px;
         width: 40%;
+        left: 20%;
 
     }
     .carousel-caption p{
@@ -80,6 +103,20 @@ input[type=email]{
     line-height: 60px;
     margin:0;
     padding:10px;
+}
+.sub{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.img-gallery img{
+    height: auto;
+    width: auto;
+}
+.img-gallery img:hover{
+    transition-duration: 0.2s;
+    transform:scale(1.06);
+    overflow: hidden;
+    cursor: pointer;
 }
 
 
