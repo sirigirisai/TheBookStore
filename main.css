@@ -129,6 +129,10 @@ input[type=email]{
     border: 3px solid black;
     border-radius: 10px;
 }
+.img-gallery{
+    border: 20px solid black;
+    width: auto;
+}
 .img-gallery img{
     height: auto;
     width: auto;
