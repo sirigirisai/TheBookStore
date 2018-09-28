@@ -476,44 +476,47 @@
     <div class="img-gallery">
   <div class="row">
     <div class="col-lg-3 col-md-4 col-sm-6 m-0 p-0">
-      <img class="img-fluid c" src="img/books/gallery/1.jpg">
+      <img class="img-fluid g" src="img/books/gallery/1.jpg">
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 m-0 p-0">
-      <img class="img-fluid" src="img/books/gallery/2.jpg">
+      <img class="img-fluid g" src="img/books/gallery/2.jpg">
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 m-0 p-0">
-        <img class="img-fluid c" src="img/books/gallery/3.jpg">
+        <img class="img-fluid g" src="img/books/gallery/3.jpg">
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 m-0 p-0">
-        <img class="img-fluid" src="img/books/gallery/4.jpg">
+        <img class="img-fluid g" src="img/books/gallery/4.jpg">
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 m-0 p-0">
-        <img class="img-fluid" src="img/books/gallery/12.jpg">
+        <img class="img-fluid g" src="img/books/gallery/12.jpg">
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 m-0 p-0">
-        <img class="img-fluid" src="img/books/gallery/11.jpg">
+        <img class="img-fluid g" src="img/books/gallery/11.jpg">
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 m-0 p-0">
-        <img class="img-fluid" src="img/books/gallery/7.jpg">
+        <img class="img-fluid g" src="img/books/gallery/7.jpg">
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 m-0 p-0">
-        <img class="img-fluid" src="img/books/gallery/8.jpg">
+        <img class="img-fluid g" src="img/books/gallery/8.jpg">
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 m-0 p-0">
-        <img class="img-fluid" src="img/books/gallery/9.jpg">
+        <img class="img-fluid g" src="img/books/gallery/9.jpg">
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 m-0 p-0">
-        <img class="img-fluid" src="img/books/gallery/10.jpg">
+        <img class="img-fluid g" src="img/books/gallery/10.jpg">
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 m-0 p-0">
-        <img class="img-fluid" src="img/books/gallery/5.jpg">
+        <img class="img-fluid g" src="img/books/gallery/5.jpg">
     </div>
     <div class="col-lg-3 col-md-4 col-sm-6 m-0 p-0">
-        <img class="img-fluid" src="img/books/gallery/6.jpg">
+        <img class="img-fluid g" src="img/books/gallery/6.jpg">
     </div>
   </div>
   </div>
 </div>
+<img src="" class="img-fluid p-1" id="m">
+
+
 <!--swipe carousel image gallery-->
 <!-- Swiper -->
 <div class="container-fluid bg-black swiper-container">
@@ -536,11 +539,15 @@
     <div class="swiper-button-prev"></div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
   </div>
 
 <!--swipe carousel end-->
 
+
 <!--*********IMAGE GALLERGY END**************-->
+
 <hr>
 
 <!--*************ABOUT portfolio blog*********************-->
@@ -678,11 +685,20 @@ new WOW().init();
 
 
 //image gallery
-  $('.c').click(function(){
-        $('.c').effect(bounce, 200, function(){
-          $('.c').show();
-        });
-      });
+  $('.g').click(function(){
+    var str = $(this).attr('src');
+    $("#m").attr('src', str)
+    $("#m").dialog({
+      height:600,
+      width:800,
+      draggable:false,
+      resizable:false,
+      modal:true,
+      show:{"effect":"puff",duration:200},
+      hide:{"effect":"explode",duration:200}
+    })
+  })
+
 //swiper 
 var swiper = new Swiper('.swiper-container',{
         navigation: {
@@ -692,6 +708,10 @@ var swiper = new Swiper('.swiper-container',{
         autoplay:{
           delay:1000
         },
+        pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },
 });
 
 //end of swipe
