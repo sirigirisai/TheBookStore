@@ -145,4 +145,12 @@ input[type=email]{
 }
 
 
+/*nav dropdown hover*/
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.navbar .dropdown .dropdown-item:hover{
+   background-color: #202020;
+   color:#202020 ;
+}
     
