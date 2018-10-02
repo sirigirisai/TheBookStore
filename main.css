@@ -130,7 +130,7 @@ input[type=email]{
     border-radius: 10px;
 }
 .img-gallery{
-    border: 20px solid black;
+    border: 0px solid black;
     width: auto;
 }
 .img-gallery img{
@@ -154,3 +154,17 @@ input[type=email]{
    color:#202020 ;
 }
     
+/* dialog box */
+
+.ui-dialog {
+    padding: 0;
+    box-shadow:0 10px 50px;
+}
+.ui-dialog .ui-dialog-titlebar{
+padding: 0px;
+background-color: #202020;
+margin: 0;
+}
+.ui-dialog .ui-dialog-titlebar-close{
+
+}
